@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Refactoring/">
+    <Project Path="../OCP-DIP-Refactor/Refactoring-OCP-DIP-Composition/part-01/RefactoringLab.Part01.csproj" />
+    <Project Path="../OCP-DIP-Refactor/Refactoring-OCP-DIP-Composition/part-02/RefactoringLab.Part02.csproj" />
+    <Project Path="../OCP-DIP-Refactor/Refactoring-OCP-DIP-Composition/part-03/RefactoringLab.Part03.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+</Solution>
