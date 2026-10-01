@@ -11,4 +11,5 @@
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
   </Folder>
+  <Project Path="Generics/Generics.csproj" Id="46d7c16d-aec8-4b4b-b45f-c9b3b8607ae7" />
 </Solution>
