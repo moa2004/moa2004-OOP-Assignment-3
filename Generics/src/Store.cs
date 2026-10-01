@@ -5,28 +5,27 @@ namespace Generics.src
 {
     internal class Store<T> where T : IHasId
     {
-        private List<T> items = new List<T>();
+        private Dictionary<int, T> _items = new Dictionary<int, T>();
         public void Add(T item)
         {
-            items.Add(item);
+            if (_items.ContainsKey(item.Id))
+            {
+                throw new InvalidOperationException($"An item with Id '{item.Id}' already exists.");
+            }
+            _items.Add(item.Id, item);
         }
         public T? GetById(int id)
         {
-            foreach (var item in items)
+            if (_items.TryGetValue(id, out T? item))
             {
-                if (item.Id == id) return item;
+                return item;
             }
             return default;
         }
-        public List<T> GetAll() => items;
+        public IEnumerable<T> GetAll() => _items.Values;
         public void Remove(int id)
         {
-            var itemToRemove = GetById(id);
-            if (itemToRemove != null)
-            {
-                items.Remove(itemToRemove);
-            }
-            else
+            if (!_items.Remove(id))
             {
                 Console.WriteLine("ID Not Found");
             }
