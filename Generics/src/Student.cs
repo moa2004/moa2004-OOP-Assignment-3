@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Generics.src
 {
-    internal class Student
+    internal class Student:IHasId
     {
 
         public int Id { get;}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Generics.src
 {
-    internal class Course
+    internal class Course:IHasId 
     {
         public int Id { get; }
         public string Title { get; set; }

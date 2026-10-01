@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Generics.src
 {
-    internal class Store<T>
+    internal class Store<T> where T : IHasId
     {
         private List<T> items = new List<T>();
         public void Add(T item)
