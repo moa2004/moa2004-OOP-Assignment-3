@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Collections/">
+    <File Path="Answers.md" />
+    <Project Path="src/src.csproj" />
+  </Folder>
   <Folder Name="/Refactoring/">
     <Project Path="../OCP-DIP-Refactor/Refactoring-OCP-DIP-Composition/part-01/RefactoringLab.Part01.csproj" />
     <Project Path="../OCP-DIP-Refactor/Refactoring-OCP-DIP-Composition/part-02/RefactoringLab.Part02.csproj" />
