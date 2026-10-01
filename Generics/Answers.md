@@ -11,3 +11,10 @@ CS1061: 'T' does not contain a definition for 'Id' and no accessible extension m
 
 **Explanation:**
 The compiler rejects it because it doesn't know what type 'T' will be. 'T' could be any type (like string or int), and not all types have an 'Id' property. Therefore, the compiler prevents us from accessing a property that might not exist.
+
+### Step 7
+**Why 'new Store<int>()' does not compile:**
+It does not compile because 'int' does not implement the 'IHasId' interface. The class 'Store<T>' has the constraint 'where T : IHasId'.
+
+**What is the common name for the kind of class built in Steps 4 and 5?**
+The Repository Pattern.
